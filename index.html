@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ATM Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="atm">
+    <h1>ATM Simulator</h1>
+    <form id="atm-form">
+      <label for="deposit">Deposit Amount (₹):</label>
+      <input type="number" id="deposit" min="0" required />
+
+      <label for="mode">Transaction Mode:</label>
+      <select id="mode">
+        <option value="Cr">Credit</option>
+        <option value="Dr">Debit</option>
+      </select>
+
+      <label for="withdraw">Withdraw Amount (₹):</label>
+      <input type="number" id="withdraw" min="0" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
